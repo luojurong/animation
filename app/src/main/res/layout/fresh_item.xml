@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="7dp"
+    >
+    
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            style="@style/match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="这只兔子叫DOKI"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/logo_thumb"
+                android:scaleType="fitXY"
+                />
+
+            <RelativeLayout
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/status_ImageView"
+                    android:layout_marginLeft="10dp"
+                    style="@style/wrap_content"
+                    android:src="@mipmap/comm_ic_title_n"
+                    />
+                <TextView
+                    android:layout_toRightOf="@+id/status_ImageView"
+                    android:layout_marginLeft="10dp"
+                    style="@style/wrap_content"
+                    android:text="完结篇"
+                    android:layout_centerVertical="true"
+                    />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/read_textView"
+                    android:layout_marginRight="10dp"
+                    style="@style/wrap_content"
+                    android:src="@mipmap/comm_ic_reads"
+                    />
+                <TextView
+                    android:id="@+id/read_textView"
+                    android:layout_centerInParent="true"
+                    style="@style/wrap_content"
+                    android:text="9000"
+                    />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/comment_ImageView"
+                    style="@style/wrap_content"
+                    android:src="@mipmap/comm_ic_reviews"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="70dp"
+                    />
+                <TextView
+                    android:id="@+id/comment_TextView"
+                    style="@style/wrap_content"
+                    android:text="88"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50dp"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

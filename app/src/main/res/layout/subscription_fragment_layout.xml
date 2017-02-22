@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView
+        android:id="@+id/gv_subscribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="auto_fit"
+        android:columnWidth="90dp"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        >
+    </GridView>
+
+    <TextView
+        android:id="@+id/tv_separate"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#ccc"
+        android:layout_below="@+id/gv_subscribe"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_separate"
+        >
+        <RelativeLayout
+            android:id="@+id/relative_commend"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="5dp">
+            <ImageView
+                android:id="@+id/img_commend"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/ic_launcher"
+                />
+            <TextView
+                android:id="@+id/tv_commend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小编推荐"
+                android:layout_toRightOf="@+id/img_commend"
+                />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalscrollview"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_below="@+id/relative_commend">
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/horizontalscrollview"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_back_toright"
+                />
+            <Button
+                android:id="@+id/btn_exchange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="换一波"
+                android:textColor="#f00"
+                android:background="#fff"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_back_toleft"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
