@@ -12,6 +12,9 @@ import android.widget.TextView;
 import com.animation.animation.R;
 import com.animation.animation.view.HotWordFlowLayout;
 
+/**
+ * 搜索界面
+ */
 
 public class SearchActivity extends AppCompatActivity {
     private ImageView img_back;
