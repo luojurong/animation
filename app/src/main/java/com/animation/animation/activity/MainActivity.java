@@ -14,6 +14,8 @@ import com.animation.animation.adapter.ViewPagerAdapter;
 import com.animation.animation.fragment.FreshFragment;
 import com.animation.animation.fragment.HotFragment;
 import com.animation.animation.fragment.SubscriptionFragment;
+import com.animation.animation.http.HttpUtils;
+import com.animation.animation.http.Util;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
@@ -39,11 +41,14 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+    //    new HttpUtils().hotDownLoad(Util.hotpath);
         x.view().inject(this);
 
         addFragment();
         setAdapter();
         navigationView.setNavigationItemSelectedListener(this);
+
+
     }
 
     private void setAdapter() {

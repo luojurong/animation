@@ -3,6 +3,8 @@ package com.animation.animation.fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,6 +41,7 @@ public class HotFragment extends Fragment{
      //   RecyclerView recyclerView = new RecyclerView(getActivity());
         View view = inflater.inflate(R.layout.hot_fragment_layout, container,false);
         recyclerView = (RecyclerView) view.findViewById(R.id.rView_hotFragment);
+        recyclerView.setLayoutManager(new GridLayoutManager(getActivity(),1, LinearLayoutManager.VERTICAL, false));
         setAdapter(inflater);
         return x.view().inject(this,inflater,container);
     }
