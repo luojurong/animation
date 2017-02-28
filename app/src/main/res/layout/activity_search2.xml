@@ -19,7 +19,7 @@
             android:layout_height="40dp"
             android:src="@drawable/ic_back_white" />
         <EditText
-            android:background="#fff"
+            android:background="@drawable/hotword"
             android:layout_width="280dp"
             android:layout_height="40dp"
             android:layout_centerInParent="true"
@@ -98,6 +98,7 @@
 
             </RelativeLayout>
             <GridView
+                android:id="@+id/gv_clssify"
                 android:layout_below="@+id/relative_clssify"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
