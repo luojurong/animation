@@ -26,7 +26,7 @@ import java.util.List;
  * Created by luojurong on 2017/2/18.
  */
 
-@ContentView(R.layout.hot_fragment_layout)
+//@ContentView(R.layout.hot_fragment_layout)
 public class HotFragment extends Fragment{
 
     List<String> data = new ArrayList<String>();
@@ -43,7 +43,7 @@ public class HotFragment extends Fragment{
         recyclerView = (RecyclerView) view.findViewById(R.id.rView_hotFragment);
         recyclerView.setLayoutManager(new GridLayoutManager(getActivity(),1, LinearLayoutManager.VERTICAL, false));
         setAdapter(inflater);
-        return x.view().inject(this,inflater,container);
+        return view; //x.view().inject(this,inflater,container)
     }
 
     private void setAdapter(LayoutInflater inflater) {
