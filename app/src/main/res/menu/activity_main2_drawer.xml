@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_scan"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="浏览" />
+        <item
+            android:id="@+id/nav_download"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="下载" />
+        <item
+            android:id="@+id/nav_buy"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="已购" />
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_money"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="星币" />
+            <item
+                android:id="@+id/nav_test"
+                android:icon="@drawable/ic_menu_share"
+                android:title="任务" />
+            <item
+                android:id="@+id/nav_message"
+                android:icon="@drawable/ic_menu_send"
+                android:title="消息" />
+        </menu>
+    </item>
+
+    <item android:id="@+id/nav_setting"
+        android:title=""
+        android:icon="@android:drawable/ic_menu_report_image"/>
+
+</menu>

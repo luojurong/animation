@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+
+    <!--评论-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/btn_portrait_before_n"
+            />
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_height="0dp"
+                android:layout_width="wrap_content"
+                android:text="道理我都懂"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="1月前"
+                android:gravity="center_vertical"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/btn_praise_h"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="动漫在哪里"
+        android:layout_marginLeft="30dp"
+        />
+
+    <!--回复内容,无内容时隐藏
+    android:visibility="gone"
+    -->
+    <LinearLayout
+        android:id="@+id/mLinearLayout"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                style="@style/wrap_content"
+                android:text="昵称"
+                android:textColor="#71BCFC"
+                />
+            <TextView
+                style="@style/wrap_content"
+                android:text="回复"
+                />
+            <TextView
+                style="@style/wrap_content"
+                android:text="昵称"
+                android:textColor="#71BCFC"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="现在只有pptv"
+            android:layout_marginTop="5dp"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

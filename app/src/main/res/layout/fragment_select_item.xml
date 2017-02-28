@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--选集-->
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/wrap_content"
+            android:src="@mipmap/ic_unread" />
+
+        <TextView
+            style="@style/wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="第一话" />
+
+        <TextView
+            style="@style/wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="呆呆猫登场（11p）" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            style="@style/wrap_content"
+            android:src="@mipmap/detail_dl_auto"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
