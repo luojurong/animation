@@ -88,8 +88,8 @@ public class HotRecycleViewAdapter extends RecyclerView.Adapter<RecyclerView.Vie
 
             case 1:
                 ViewHolder1 viewHolder1 = (ViewHolder1) holder;
-                viewHolder1.findIv().setTv("lalalla");
-
+                viewHolder1.findIv().setTv("la la la");
+                viewHolder1.findIv().setImg(R.mipmap.ic_launcher);
                 break;
             case 2:
 

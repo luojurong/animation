@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.animation.animation.activity.SearchActivity">
+
+    <!--头部搜索框-->
+    <RelativeLayout
+        android:id="@+id/relative_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f00"
+        android:padding="5dp">
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_back_white" />
+        <EditText
+            android:background="@drawable/hotword"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:hint="请在此输入漫画名或作者名" />
+        <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_eraser"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/relative_head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--热词-->
+            <RelativeLayout
+                android:id="@+id/relative_hotword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+                <ImageView
+                    android:id="@+id/img_hotword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"/>
+                <TextView
+                    android:layout_toRightOf="@+id/img_hotword"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="热词"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/relative_hotword"
+                android:id="@+id/relative_flowlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.animation.animation.view.HotWordFlowLayout
+                    android:id="@+id/flowlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.animation.animation.view.HotWordFlowLayout>
+
+            </RelativeLayout>
+
+            <!--分类-->
+            <RelativeLayout
+                android:layout_below="@+id/relative_flowlayout"
+                android:id="@+id/relative_clssify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img_classify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分类"
+                    android:layout_toRightOf="@+id/img_classify"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+            <GridView
+                android:id="@+id/gv_clssify"
+                android:layout_below="@+id/relative_clssify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </GridView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

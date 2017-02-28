@@ -1,5 +1,6 @@
 package com.animation.animation.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
@@ -8,12 +9,16 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.animation.animation.R;
 import com.animation.animation.adapter.ViewPagerAdapter;
 import com.animation.animation.fragment.FreshFragment;
 import com.animation.animation.fragment.HotFragment;
 import com.animation.animation.fragment.SubscriptionFragment;
+import com.animation.animation.http.HttpUtils;
+import com.animation.animation.http.Util;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
@@ -34,16 +39,27 @@ public class MainActivity extends AppCompatActivity
     NavigationView navigationView;
     @ViewInject(R.id.viewpager_main)
     ViewPager viewPager;
+    @ViewInject(R.id.search_main)
+    ImageView searchImg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        new HttpUtils().hotDownLoad(Util.hotpath);
         x.view().inject(this);
 
         addFragment();
         setAdapter();
         navigationView.setNavigationItemSelectedListener(this);
+        searchImg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,SearchActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void setAdapter() {

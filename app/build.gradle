@@ -35,4 +35,6 @@ dependencies {
     compile 'com.androidkun:pulltorefreshrecyclerview:1.0.4'
     /*tabLayout绑定viewpager使用的方法*/
     compile 'com.android.support:design:24.2.0'
+
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
 }
