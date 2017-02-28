@@ -27,7 +27,7 @@ public class MainItemView extends LinearLayout{
     private void initParams(Context context) {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-        View view = inflater.inflate(R.layout.itemview_main_layout,null);
+        View view = inflater.inflate(R.layout.itemview_main_layout,this);
         img = (ImageView) view.findViewById(R.id.img_itemview);
         tv = (TextView) view.findViewById(R.id.tv_itemview);
     }

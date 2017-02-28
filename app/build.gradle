@@ -37,4 +37,13 @@ dependencies {
     compile 'com.android.support:design:24.2.0'
 
     compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+    //可以单独使用，不需要依赖下方的扩展包
+    compile 'com.zhy:okhttputils:2.6.2'  //可以单独使用，不需要依赖下方的扩展包
+    compile 'com.lzy.net:okhttpserver:1.0.3'
+    compile 'com.zhy:okhttputils:2.6.2'  //可以单独使用，不需要依赖下方的扩展包
+    compile 'com.lzy.net:okhttpserver:1.0.3'
+
+    compile 'com.zhy:okhttputils:2.6.2'  //可以单独使用，不需要依赖下方的扩展包
+    compile 'com.lzy.net:okhttpserver:1.0.3'
+
 }
